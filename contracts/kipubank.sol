@@ -139,7 +139,7 @@ contract KipuBank {
      * @notice Private function to validate a user's balance
      * @param _user Address of the user
      * @param _amount Amount to validate against
-     * @return True if the user has sufficient balance, false otherwisee
+     * @return True if the user has sufficient balance, false otherwise
      */
     function _hasEnoughBalance(address _user, uint256 _amount) private view returns (bool) {
         return userBalances[_user] >= _amount;
